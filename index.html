@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Asignando nombre y librerias -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Reproductor Musical</title>
+  </head>
+
+  <body>
+    <h1>Reproductor musical</h1>
+    <!-- se muestra el titulo -->
+
+    <!-- asignación de clases -->
+
+    <div class="music-container" id="music-container">
+      <div class="music-info">
+        <div class="title-container">
+          <h4 id="title"></h4>
+          <span id="progress-time" class="progress-time"></span>
+        </div>
+        <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+        </div>
+      </div>
+
+      <audio src="src/music/hip-hop.mp3" id="audio"></audio>
+
+      <div class="img-container">
+        <img src="src/images/hip-hop.jpg" alt="music-cover" id="cover" />
+      </div>
+
+      <div class="navigation">
+        <button id="prev" class="action-btn">
+          <i class="fas fa-backward"></i>
+        </button>
+        <button id="play" class="action-btn action-btn-big">
+          <i class="fas fa-play"></i>
+        </button>
+        <button id="next" class="action-btn">
+          <i class="fas fa-forward"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="playlist-container" id="playlist-container">
+      <h4>Playlist</h4>
+      <ul class="playlist" id="playlist"></ul>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
